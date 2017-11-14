@@ -35,7 +35,7 @@ database, equivalent of Delete in CRUD operations
 
 // =============================================================
 
-/* QUESTION NOTE INCOMPLETE
+/* QUESTION
 Explain what MVC means and
 why it is important in web development.
 */
@@ -54,13 +54,23 @@ why it is important in web development.
 
 // =============================================================
 
-/* QUESTION NOTE INCOMPLETE
+/* QUESTION
 What are the advantages/disadvantages
 of using a NoSQL vs SQL database?
 */
 
 /*
-
+  The major difference has do to with the
+  advantages and disadvantages of relational
+  vs. non-relational databases. In the case of MySQL,
+  a relational database allows for separation of data
+  items that can be connected via foreign keys. This allows
+  for database structure mutability, in which a coder can set
+  up a database without necessarily worrying about wholistic
+  structure of data organization. In the case of a Non-Relational
+  Database, a greater amount of thought has to be put into the architecture
+  of a model, because alteration of that type of structure
+  gets difficult as the number of data entries increases.
 */
 
 // =============================================================
