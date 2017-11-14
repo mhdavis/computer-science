@@ -41,6 +41,14 @@ why it is important in web development.
 */
 
 /* ANSWER:
+  MVC stands for Model View Controller,
+  and is a software architectural pattern
+  for creating user interfaces. The View corresponds
+  to the portion of the software that the user interacts
+  with and sees. The user uses the controller portion
+  of the application to manipulate the model, which
+  in most cases can be seen as a place for data storage,
+  that when updated, updates the user view.
 
 */
 
