@@ -42,3 +42,6 @@ function translatePigLatin(str) {
 }
 
 console.log(translatePigLatin("eight"));
+// => eightway
+console.log(translatePigLatin("california"));
+// => aliforniacay
