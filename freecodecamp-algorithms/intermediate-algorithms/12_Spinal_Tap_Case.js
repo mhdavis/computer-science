@@ -1,3 +1,8 @@
+/*
+  Convert a string to spinal case. Spinal case
+  is all-lowercase-words-joined-by-dashes.
+*/
+
 function spinalCase(str) {
 
   // Create a regex expression
