@@ -16,6 +16,7 @@ puts 3 * 3 # multiplication
 puts 3 / 3 # division
 puts 3**3  # exponents
 puts 5%3   # remainder division
+puts -5 + 3 # negative numbers
 
 # puts vs print
 puts "What's up?" # adds \n to end of string
@@ -61,3 +62,27 @@ elsif condition_val > 0
 else
   puts "value is zero"
 end
+
+# unless
+# unless is the anti-"if", and is equal to if (!false)
+hungry = false
+
+unless hungry
+  puts "I'm writing Ruby programs!"
+else
+  puts "Time to eat!"
+end
+
+# comparators
+x = 2
+y = 2
+puts x == y # will print true
+puts x != y # will print false
+puts x < y # ...here are some others
+puts x > y
+puts x <= y
+puts x >= y
+
+# binary operators
+puts true && true # and
+puts true || false # or - inclusive (one or both check out)
