@@ -28,7 +28,7 @@ rescue # You could use rescue ZeroDivision Error
   exit
 end
 
-# raising your own errors
+# raising your own exceptions
 def check_age(age)
   raise ArgumentError, "Enter Positive Number" unless age > 0
 end

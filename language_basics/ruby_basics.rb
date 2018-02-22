@@ -24,16 +24,32 @@ puts "What's up?" # adds \n to end of string
 print "Oxnard" # doesn't add \n
 
 # ---------------- STRING METHODS -------------------
-puts practice_string = "Check it out"
-puts practice_string.length
-puts practice_string.reverse
-puts practice_string.upcase
-puts practice_string.downcase
+puts str = "Check it out"
+puts str.length
+puts str.reverse
+puts str.upcase
+puts str.downcase
+puts str.include?("it")
+puts str.size
+puts str.count("aeiou").to_s # count number of vowels
+puts str.count("^aeiou").to_s # count number of strings
+puts str.lstrip # strips left whitespace
+puts str.rstrip # strips right whitespace
+puts str.strip # strips space
+puts str.rjust(20, '.') # right justify
+puts str.ljust(20, '.') # left justify
+puts str.center(20, '.') # centers
+puts str.chop # "Check it ou"
+puts str.chomp # elminates whitespace
+puts str.chomp('it') # "Check  out"
+puts str.delete("t") # "Check i ou"
+str_arr = str.split(//) # splits each character into array
+str_arr = str.split(/ /) # splits each character into array w/ spaces removed 
 puts "captilizing".capitalize! # capitalizes first letter
 # the ! will modify the value contained in a variable
 5.to_s # converts to string
 
-# multiline comments
+# ---------------- MULTILINE COMMENTS -------------------
 =begins
 All of this stuff
 is hidden
