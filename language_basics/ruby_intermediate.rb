@@ -216,7 +216,7 @@ puts array_4.values_at(0,1,3).join(", ") # [1, "two", 5.5]
 
 # Add 0 at beginning of array
 array_4.unshift(0)
-puts array_4.join(', ')
+puts array_4.join(', ') # converts an array into a string
 
 # remove the first item in the array
 array_4.shift()
@@ -233,3 +233,30 @@ puts array_4.join(", ")
 # add one array to the end of another array
 array_4.concat([10, 20, 30])
 puts array_4.join(", ")
+
+# ---------------- ARRAY METHODS -------------------
+test_arr = [1,2,3,3,4,5]
+
+puts test_arr.size().to_s # returns array size
+puts test_arr.include?(3).to_s # returns true
+puts test_arr.count(3).to_s # returns 2
+puts test_arr..join(", ") # converts array to string
+p test_arr # print and inspect the array
+
+test_arr.each do |val|
+  puts val
+end
+
+array = [1,2,3]
+
+# array.map
+added = array.map{ |x| x + 2 }
+
+# array.select (functions like find in JS)
+selected = array.select{|num| num > 1}
+
+# array.reject (the opposite of select)
+rejected = array.reject{|num| num > 1}
+
+# array.reduce
+reduced = array.reduce{|sum, x| sum + x} # => 6
