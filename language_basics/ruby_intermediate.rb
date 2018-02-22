@@ -185,3 +185,51 @@ end
 generic_bird = Bird.new
 generic_bird.tweet(Cardinal.new)
 generic_bird.tweet(Parrot.new)
+
+# ---------------- SYMBOLS -------------------
+# symbols are immutable strings
+# they are used for memory conservation and speedy comparisons
+# A symbol is a way to pass string data if:
+# The string value won't change
+# The string doesn't need access to string methods
+# (remember, everything in ruby is a class)
+:johnny
+
+puts :johnny # returns "johnny"
+puts :johnny.to_s # returns "johnny"
+puts :johnny.class # returns Symbol
+puts :johnny.object_id # returns a id number
+
+# ---------------- ARRAYS -------------------
+array_1 = Array.new
+array_2 = Array.new(5) # Gets nil as default
+array_3 = Array.new(5, "empty")
+array_4 = [1, "two", 3, 5.5] # can store multiple object types
+puts array_1 # returns nothing
+puts array_2 # returns an array of 5 empty indices
+puts array_3 # returns an array of 5 "empty"s
+puts array_4 # returns elements in the array
+
+puts array_4[2] # 3
+puts array_4[2,2].join(", ") # returns 2 values starting at 2nd index
+puts array_4.values_at(0,1,3).join(", ") # [1, "two", 5.5]
+
+# Add 0 at beginning of array
+array_4.unshift(0)
+puts array_4.join(', ')
+
+# remove the first item in the array
+array_4.shift()
+puts array_4.join(", ")
+
+# add 100, 200 to the end of the array
+array_4.push(100, 200)
+puts array_4.join(", ")
+
+# remove item at the end of the array
+array_4.pop
+puts array_4.join(", ")
+
+# add one array to the end of another array
+array_4.concat([10, 20, 30])
+puts array_4.join(", ")
