@@ -68,3 +68,33 @@ end
 
 p call_proc
 # Prints "Before proc" but not "After proc"
+
+# ---------------- CLOSURES -------------------
+def call_proc(my_proc)
+  count = 500
+  my_proc.call
+end
+
+count   = 1
+my_proc = Proc.new { puts count }
+
+p call_proc(my_proc) # What does this print?
+# it prints 1! call_proc is using the value passed to it
+# by my_proc, and my_proc is getting its value from where
+# its defined
+
+# ---------------- BINDING -------------------
+def return_binding
+  foo = 100
+  binding
+end
+
+# Foo is available thanks to the binding,
+# even though we are outside of the method
+# where it was defined.
+puts return_binding.class
+puts return_binding.eval('foo')
+
+# If you try to print foo directly you will get an error.
+# The reason is that foo was never defined outside of the method.
+puts foo
