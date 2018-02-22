@@ -131,3 +131,29 @@ begin
   puts z
   break if z >= 10
 end while z <= 10
+
+# ---------------- UNTIL LOOP -------------------
+a = 1
+until a >= 10
+  a += 1
+  next unless (a % 2) == 0
+  puts a
+end
+
+# ---------------- FOR LOOPS -------------------
+numbers = [1, 2, 3, 4, 5]
+
+for number in numbers
+  puts "for loop number: #{number}"
+end
+
+# Array each method
+fruits = ['banana', 'apple', 'orange', 'pear']
+fruits.each do |fruit|
+  puts "I want to eat a #{fruit}"
+end
+
+# Cycles through numbers 0 to 5
+(0..5).each do |i|
+  puts "number #{i}"
+end
