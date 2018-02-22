@@ -19,9 +19,10 @@ puts 3**3  # exponents
 puts 5%3   # remainder division
 puts -5 + 3 # negative numbers
 
-# ---------------- PUT VS PRINT -------------------
+# ---------------- PUT VS PRINT VS PRINTF -------------------
 puts "What's up?" # adds \n to end of string
 print "Oxnard" # doesn't add \n
+printf "Sir %s is a knight \n", 'Daniel' # string formatting
 
 # ---------------- STRING METHODS -------------------
 puts str = "Check it out"
@@ -44,7 +45,7 @@ puts str.chomp # elminates whitespace
 puts str.chomp('it') # "Check  out"
 puts str.delete("t") # "Check i ou"
 str_arr = str.split(//) # splits each character into array
-str_arr = str.split(/ /) # splits each character into array w/ spaces removed 
+str_arr = str.split(/ /) # splits each character into array w/ spaces removed
 puts "captilizing".capitalize! # capitalizes first letter
 # the ! will modify the value contained in a variable
 5.to_s # converts to string
