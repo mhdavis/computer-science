@@ -107,3 +107,81 @@ max = GermanShepard.new
 max.name = "Max"
 
 printf "%s goes %s \n", max.name, max.bark()
+
+# ---------------- MODULES -------------------
+# Modules contain methods and variables but cannot
+# be instantiated; used to act functionality to classes
+
+# Allows you acces to the Human module (Ruby 2+)
+require_relative "human"
+require_relative "smart"
+
+module Animal
+  def make_sound
+    puts "Grrr"
+  end
+end
+
+# You can inherit a modules method with prepend or include
+# You can inherit from numerous methods instead of one class
+
+class Doggy
+  include Animal
+end
+
+rover = Doggy.new
+rover.make_sound
+
+module Human
+  attr_accessor :name, :height, :weight
+
+  def run
+    # here we use the self keyword to get the objects variable
+    puts self.name + "runs"
+  end
+
+end
+
+class Scientist
+  include Human
+  prepend Smart # Any methods in Smart will superseed those in class
+
+  def act_smart
+    return "E = mc^2"
+  end
+end
+
+einstein = Scientist.new
+einstein.name = "Albert"
+puts einstein.name
+
+einstein.run
+
+puts einstein.name + "says" + einstein.act_smart
+
+# ---------------- POLYMORPHISM -------------------
+class Bird
+  def tweet(bird_type)
+    bird_type.tweet
+  end
+end
+
+class Cardinal < Bird
+  def tweet
+    puts "Tweet Tweet"
+  end
+end
+
+class Parrot < Bird
+  def tweet
+    puts "Squawk"
+  end
+end
+
+# Statically typed languages use duck typing to achieve polymorphism
+# Ruby pays less attention to the class type versus the methods that can
+# be called on it
+
+generic_bird = Bird.new
+generic_bird.tweet(Cardinal.new)
+generic_bird.tweet(Parrot.new)
