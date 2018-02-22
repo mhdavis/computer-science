@@ -86,3 +86,7 @@ puts x >= y
 # binary operators
 puts true && true # and
 puts true || false # or - inclusive (one or both check out)
+puts !(3 == 3) # not - returns false
+
+# ternary operators
+(3 == 3) ? puts 'they are equal' : puts 'not equal'
