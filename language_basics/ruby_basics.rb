@@ -92,7 +92,6 @@ puts x <= y
 puts x >= y
 
 # ---------------- BINARY OPERATORS -------------------
-
 puts true && true # and
 puts true || false # or - inclusive (one or both check out)
 puts !(3 == 3) # not - returns false
@@ -110,8 +109,25 @@ loop_var = 1
 # loops until you break out of loop
 loop do
   loop_var += 1 # loop_var = loop_var + 1
+  # skips this iteration of the loop
   next unless (loop_var % 2) == 0
+  puts loop_var
   break if loop_var >= 10
 end
 
 # ---------------- WHILE LOOP -------------------
+y = 1
+while y <= 10
+  y += 1
+  next unless (y % 2) == 0
+  puts y
+  break if y >= 10
+end
+
+z = 1
+begin
+  z += 1
+  next unless (z % 2) == 0
+  puts z
+  break if z >= 10
+end while z <= 10
