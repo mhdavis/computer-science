@@ -1,3 +1,22 @@
+=begin
+  _____       _                         _                               _
+ |  __ \     | |               /\      | |                             | |
+ | |__) |   _| |__  _   _     /  \   __| |_   ____ _ _ __   ___ ___  __| |
+ |  _  / | | | '_ \| | | |   / /\ \ / _` \ \ / / _` | '_ \ / __/ _ \/ _` |
+ | | \ \ |_| | |_) | |_| |  / ____ \ (_| |\ V / (_| | | | | (_|  __/ (_| |
+ |_|  \_\__,_|_.__/ \__, | /_/    \_\__,_| \_/ \__,_|_| |_|\___\___|\__,_|
+                     __/ |
+                    |___/
+
+---------------- CONTENTS -------------------
+[ 21] ENUMERABLES
+[ 78] BLOCKS
+[107] LAMBDAS
+[123] PROCS
+[149] CLOSURES
+[163] BINDINGS
+=end
+
 # ---------------- ENUMERABLES -------------------
 # Classes that include the Enumerable module gain collection capabilities
 # but they must define a function called each
