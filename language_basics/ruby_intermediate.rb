@@ -261,7 +261,7 @@ rejected = array.reject{|num| num > 1}
 # array.reduce
 reduced = array.reduce{|sum, x| sum + x} # => 6
 
-# ---------------- HASHS -------------------
+# ---------------- HASHES -------------------
 # hash is a collection of key/object pairs
 number_hash = {
   "PI" => 3.14,
