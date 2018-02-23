@@ -1,3 +1,33 @@
+=begin
+  _____       _             ____            _
+ |  __ \     | |           |  _ \          (_)
+ | |__) |   _| |__  _   _  | |_) | __ _ ___ _  ___ ___
+ |  _  / | | | '_ \| | | | |  _ < / _` / __| |/ __/ __|
+ | | \ \ |_| | |_) | |_| | | |_) | (_| \__ \ | (__\__ \
+ |_|  \_\__,_|_.__/ \__, | |____/ \__,_|___/_|\___|___/
+                     __/ |
+                    |___/
+
+---------------- CONTENTS -------------------
+[ 36] VARIABLES
+[ 43] ARITHEMATIC OPERATIONS
+[ 52] PUT VS PRINT VS PRINTF
+[ 57] STRING METHODS
+[ 83] MULTILINE COMMENTS
+[ 90] USER INPUTS
+[ 96] STRING INTERPOLATION
+[101] IF / ELSIF / ELSE
+[121] UNLESS
+[131] COMPARATORS
+[141] BINARY OPERATORS
+[150] TERNARY OPERATORS
+[153] DO LOOP
+[165] WHILE LOOP
+[182] UNTIL LOOP
+[190] FOR LOOPS
+---------------------------------------------
+=end
+
 # ruby is interpreted - no compiler needed!
 
 # this is how you print a string
