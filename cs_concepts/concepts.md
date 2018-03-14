@@ -134,3 +134,23 @@ Notice that syntactically irrelevant tokens (ex. `LBAR`) are removed from the tr
 **Interpretation** is when a source code is passed as is from a Programmer to a client and then interpreted line-by-line, executing immediately upon interpretation completion (on-the-fly interpretation).
 
 ---
+
+### Compilation vs. Interpretation: Pros and Cons
+
+Listed below are some of the advantages and disadvantages to using interpreted versus compiled languages.
+
+##### Compilation:
+
+| Pros                  | Cons                            |
+| --------------------- | ------------------------------- |
+| - Fast                | - Not Cross-platform            |
+| - Source Code Private | - Requires extra compiling step |
+|                       | - Longer to Develop in          |
+
+##### Interpretation:
+
+| Pros               | Cons            |
+| ------------------ | --------------- |
+| - Cross-platform   | - Slower        |
+| - No extra step    | - Public source |
+| - Easier debugging |                 |
