@@ -23,6 +23,8 @@ in this example we have to specify the data type. Here we tell the compiler that
 int item = 3;
 ```
 
+---
+
 ### First Class Functions
 
 When a function is defined to be a _"first class citizen"_ in a language it means three essential things:
@@ -33,9 +35,11 @@ When a function is defined to be a _"first class citizen"_ in a language it mean
 
 To put it simply, a language that contains first class functions means that functions are treated as values. A usually acronym is **RAPS** (Returned, Assigned, Passed, Stored.)
 
+---
+
 ### Closures
 
-**Closures** are reusable code blocks that contain needed data to be executed within their scope (see _First Class Functions_):
+**Closures** are reusable code blocks that contain necessary execution data stored within their scope (see _First Class Functions_):
 
 ```javascript
 // JS example:
@@ -54,3 +58,79 @@ console.log(addedTwo); // => 3
 ```
 
 In the example above we can see that `x` is called inside of `addX`. This is because `addX` is aware of `x` as it is defined in the one scope level above it. When the actual function call is preformed inside of `var addOne = add(1)`, we are providing `x` with the value of one.
+
+---
+
+### Compilation
+
+**Compilation** is the process in which syntactically human-readable source code is converted by a language's compiler into code that is machine readable code (usually in the form of an `.exe` executable file).
+
+Technically speaking, the Compiler hands off the tree structure to the **Assembler** to be converted into binary code.
+(Note: even this varies from language to language)
+
+```
+Programmer ------.exe-----> Client
+```
+
+The process by which a compiler operates is the following:
+
+```
+--chars--> [ Lexer ] --tokens--> [ Parser ] --tree-->
+```
+
+The two major steps in compilation are **Lexing** and **Parsing**.
+
+##### Lexical Analysis (a.k.a. Lexing)
+
+The process in which a compiler's lexer takes a series of characters and converts them into tokens which can then be interpreted by a language parser.
+
+Lets examine the following code:
+
+```javascript
+// JS example:
+
+function showId(x) {
+  return x; // comment
+}
+```
+
+As this function is lexed, one might think the compiler is lexing the code from the syntactically written javascript into the abstract lexical tokens:
+
+```
+FUNCTION
+IDENT(showId)
+LPAR
+IDENT(x)
+RPAR
+LBRACE
+RETURN
+IDENT(x)
+SEMI
+RBRACE
+```
+
+Where the token `LPAR = left paren`, `RPAR = right paren`, `LBRACE = left brace`, `RBRACE = right brace`, and `SEMI = semicolon`.
+
+#### Parsing
+
+The transformation of a sequence of tokens into a tree (unstructured data into structured data).
+
+In continuing with our lexing example, the tokens created are then converted to a tree structure:
+
+```
+       +------- FUNCTION -------+
+       |            |           |
+    IDENT()      IDENT()      RETURN
+                                |
+                              IDENT()
+```
+
+Notice that syntactically irrelevant tokens (ex. `LBAR`) are removed from the tree structure, but are important for developing the actual structure of the tree. These removed tokens are left inherently in the structure of the tree.
+
+---
+
+### Interpretation
+
+**Interpretation** is when a source code is passed as is from a Programmer to a client and then interpreted line-by-line, executing immediately upon interpretation completion (on-the-fly interpretation).
+
+---
