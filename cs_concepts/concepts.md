@@ -80,6 +80,8 @@ The process by which a compiler operates is the following:
 
 The two major steps in compilation are **Lexing** and **Parsing**.
 
+_Fun Fact: Grace Hopper was the first programmer to write a compiler!_
+
 ##### Lexical Analysis (a.k.a. Lexing)
 
 The process in which a compiler's lexer takes a series of characters and converts them into tokens which can then be interpreted by a language parser.
@@ -126,6 +128,12 @@ In continuing with our lexing example, the tokens created are then converted to 
 ```
 
 Notice that syntactically irrelevant tokens (ex. `LBAR`) are removed from the tree structure, but are important for developing the actual structure of the tree. These removed tokens are left inherently in the structure of the tree.
+
+#### Assembling
+
+**Assembling** is the process in which the **Assembler** (a program) takes in text based instructions produced after parsing and converts it to binary code, thereby making it readable by the machine.
+
+Assembly languages have a one-to-one mapping to machine instructions, where as high-level programming languages have a one-to-many mapping to machine instructions.
 
 ---
 
@@ -191,3 +199,5 @@ The **view** is what the client predominantly interacts with. It is the visual r
 ##### Controller
 
 The **controller** acts as the go-between for the **view** and the **model**. Its in charge of receiving inputs and requests from the view, checking to see if they are valid, and then converting them into a command for the **model** to handle. Likewise, the **controller** also sends responses from the **model** to the **view** to be displayed for the user.
+
+---
