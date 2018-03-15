@@ -1,6 +1,8 @@
 
 // ---------------- CLASSES -------------------
-
+/*
+In groovy, everything is a class (including strings and integers)
+*/
 class HelloController {
   def world = {
     render "Hello World it's " new.java.util.Date()
@@ -85,6 +87,3 @@ class ArithematicClass {
   println("Smallest Double " + Double.MIN_VALUE);
 
 }
-
-// ---------------- STRINGS -------------------
-class StringsClass
