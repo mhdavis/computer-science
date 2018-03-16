@@ -50,6 +50,7 @@ class ArithematicExample {
     println("(3 + 2) * 5 = " + ((3 + 2) * 5));
 
     // Increment and decrement
+    def age = 40;
     println("age++ = " + (age++)); // print then increment
     println("++age = " + (++age)); // increment then print
     println("age-- = " + (age--)); // print then decrement
@@ -213,23 +214,6 @@ class InputExample {
   }
 }
 
-// ---------------- ASSERATIONS -------------------
-/*
-Here we simply verify that the variable num has a value
-of 1 at the point of execution in the code
-*/
-class AssertionsExample {
-  /*
-  def is used when you define a variable
-  Variables start with a letter and can
-  contain numbers and _
-  Variables are cynamically typed and can
-  hold any value
-  */
-  def num = 1
-  assert num == 1
-}
-
 // ---------------- GROOVY STRINGS -------------------
 /* essentially string interpolation in groovy */
 class GStringExample {
@@ -299,5 +283,36 @@ class ListExample {
 
     // Pop last item
     println("Last " + primes.pop());
+  }
+}
+
+// ---------------- MAPS -------------------
+/*
+Maps in Groovy are commonly
+known as Hashtables in other
+languages
+*/
+class MapsExample {
+  static void main(String[] args) {
+    def paulMap = [
+      'name' : 'Paul',
+      'age' : 35,
+      'address' : '123 Main St',
+      'list' : [1,2,3]
+    ];
+
+    // Access with key
+    println("Name " + paulMap['name']);
+    println("Age " + paulMap.get('age'));
+    println("List Item " + paulMap['list'][1]);
+
+    // Add key value
+    paulMap.put('city', 'Pittsburgh');
+
+    // Check for key
+    println("Has City " + paulMap.containsKey('city'));
+
+    // Size
+    println("Size " + paulMap.size());
   }
 }
