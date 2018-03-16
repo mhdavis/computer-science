@@ -141,7 +141,7 @@ Listed below are some of the advantages and disadvantages to using interpreted v
 
 ---
 
-### Static Element
+### Static Elements
 
 A **static** element (variable or method) is an element which exists throughout the lifetime of the executed program. This means that unlike in the termination of a instance, where that instance's methods are variables are removed from runtime memory, a _static_ will continue to persist and be usable by other instances.
 

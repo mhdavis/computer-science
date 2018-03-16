@@ -78,3 +78,20 @@ console.log(addedTwo); // => 3
 ```
 
 In the example above we can see that `x` is called inside of `addX`. This is because `addX` is aware of `x` as it is defined in the one scope level above it. When the actual function call is preformed inside of `var addOne = add(1)`, we are providing `x` with the value of one.
+
+**Closures** vary slightly from language to language, but maintain their essence in that they are reusable chunks of code. Here are two examples of a closure in Groovy:
+
+```java
+// Groovy Example
+class ClosureExample {
+
+  def square = { it * it }
+  assert [1,4,9] == [1,2,3].collect(square) // => true
+
+  def lastVal = 0.9
+  0.1.step(lastVal, 0.1) { current -> println (current) }
+
+}
+```
+
+A closure here is described as an open anonymous block of code that can take arguments (second groovy), return values (second groovy example), and be assigned to variables (first groovy example). **Note:** for Groovy, `it` is used as an implicit parameter unless otherwise specified.
