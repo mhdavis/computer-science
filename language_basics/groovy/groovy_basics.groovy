@@ -214,7 +214,7 @@ class InputExample {
   }
 }
 
-// ---------------- GROOVY STRINGS -------------------
+// ---------------- GROOVY STRINGS (STRING INTERPOLATION) -------------------
 /* essentially string interpolation in groovy */
 class GStringExample {
   static void main(String[] args) {
