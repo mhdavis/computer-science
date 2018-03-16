@@ -14,9 +14,10 @@ class HelloController {
 Here we simply verify that the variable num has a value
 of 1 at the point of execution in the code
 */
-def num = 1
-...
-assert num == 1
+class AssertionsClass {
+  def num = 1
+  assert num == 1
+}
 
 // ---------------- GROOVY STRINGS -------------------
 /* essentially string interpolation in groovy */
