@@ -1,3 +1,21 @@
+/*
+
+╔═╗┬─┐┌─┐┌─┐┬  ┬┬ ┬  ╔╗ ┌─┐┌─┐┬┌─┐┌─┐
+║ ╦├┬┘│ ││ │└┐┌┘└┬┘  ╠╩╗├─┤└─┐││  └─┐
+╚═╝┴└─└─┘└─┘ └┘  ┴   ╚═╝┴ ┴└─┘┴└─┘└─┘
+
+---------------- CONTENTS -------------------
+[ 20] CLASSES
+[ 36] VARIABLES
+[ 44] ARITHEMATIC
+[132] STRINGS
+[203] OUTPUT
+[218] INPUT
+[235] GROOVY STRINGS (STRING INTERPOLATION)
+[254] CONDITIONALS
+[295] LOOPING
+---------------------------------------------
+*/
 
 // ---------------- CLASSES -------------------
 /*
@@ -22,7 +40,6 @@ class VariablesExample {
     age = 40;
   }
 }
-
 
 // ---------------- ARITHEMATIC -------------------
 class ArithematicExample {
@@ -182,6 +199,7 @@ class StringsExample {
     println("Ant <=> Ant " + ('Ant' <=> 'Ant'));
   }
 }
+
 // ---------------- OUTPUT -------------------
 class OutputExample {
   static void main(String[] args) {
