@@ -1,3 +1,18 @@
+/*
+
+╔═╗┬─┐┌─┐┌─┐┬  ┬┬ ┬  ╦┌┐┌┌┬┐┌─┐┬─┐┌┬┐┌─┐┌┬┐┬┌─┐┌┬┐┌─┐
+║ ╦├┬┘│ ││ │└┐┌┘└┬┘  ║│││ │ ├┤ ├┬┘│││├┤  │││├─┤ │ ├┤
+╚═╝┴└─└─┘└─┘ └┘  ┴   ╩┘└┘ ┴ └─┘┴└─┴ ┴└─┘─┴┘┴┴ ┴ ┴ └─┘
+
+---------------- CONTENTS -------------------
+[ 16] METHODS
+[101] LISTS
+[154] MAPS
+[185] RANGES
+[213] OBJECT ORIENTED PROGRAMMING
+---------------------------------------------
+*/
+
 // ---------------- METHODS -------------------
 class MethodsParentExample {
   // Define them with def and static which means it is shared
