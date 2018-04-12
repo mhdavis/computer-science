@@ -152,3 +152,11 @@ Static methods have the benefit of helping conserve memory usage in larger progr
 ### Dependency Injection
 
 A technique whereby one object (or static method) supplies the dependencies of another object.
+
+---
+
+### Singleton Design Pattern
+
+A design pattern in object-oriented programming in which the instantiation of a class is restricted to one object.
+
+---
