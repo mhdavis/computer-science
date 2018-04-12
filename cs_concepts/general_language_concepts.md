@@ -157,6 +157,18 @@ A technique whereby one object (or static method) supplies the dependencies of a
 
 ### Singleton Design Pattern
 
-A design pattern in object-oriented programming in which the instantiation of a class is restricted to one object.
+A design pattern in object-oriented programming in which the instantiation of a class is restricted to one object. This is useful when exactly one object is needed to coordinate actions across the system.
+
+[_Entry Source_](https://en.wikipedia.org/wiki/Singleton_pattern)
+
+---
+
+### Passed by Reference vs. Passed by Value
+
+When a parameter is **passed by reference**, the caller and the callee use the same variable for the parameter. If the callee modifies the parameter variable, the effect is visible to the caller's variable.
+
+When a parameter is **passed by value**, the caller and callee have two independent variables with the same value. If the callee modifies the parameter variable, the effect is not visible in the caller.
+
+[_Entry Source_](https://stackoverflow.com/questions/373419/whats-the-difference-between-passing-by-reference-vs-passing-by-value)
 
 ---
