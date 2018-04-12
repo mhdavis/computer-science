@@ -172,3 +172,11 @@ When a parameter is **passed by value**, the caller and callee have two independ
 [_Entry Source_](https://stackoverflow.com/questions/373419/whats-the-difference-between-passing-by-reference-vs-passing-by-value)
 
 ---
+
+### Semaphore
+
+A variable or abstract data type used to control access to a common resource by multiple processes in a concurrent system.
+
+A trivial example of a semaphore: Consider a variable A and a boolean variable S. A is only accessed when S is marked true. Thus, S is a semaphore for A.
+
+[_Entry Source_](https://en.wikipedia.org/wiki/Semaphore_programming)
