@@ -180,3 +180,39 @@ A variable or abstract data type used to control access to a common resource by 
 A trivial example of a semaphore: Consider a variable A and a boolean variable S. A is only accessed when S is marked true. Thus, S is a semaphore for A.
 
 [_Entry Source_](https://en.wikipedia.org/wiki/Semaphore_programming)
+
+---
+
+### Lambda / Anonymous Function
+
+A function that is not bound to an identifier. They are often:
+
+* Arguments passed to higher order functions, or
+* Used for constructing the result of a higher order function that needs to return a function.
+
+```javascript
+// JS example
+
+var adder = function(x) {
+  // Here the returned function is
+  // an anonymous function / lambda
+  return function(y) {
+    return x + y;
+  };
+};
+add5 = adder(5);
+add5(1) == 6;
+```
+
+[_Entry Source_](https://en.wikipedia.org/wiki/Anonymous_function) |
+[_Example Code Source_](https://stackoverflow.com/questions/16501/what-is-a-lambda-function)
+
+#### Difference Between Lambdas and Closures
+
+A lambda is just an anonymous function.
+
+A closure is any function which closes over the environment in which it was defined. This means that it can access variables not in its parameter list.
+
+[_Comparison Source_](https://stackoverflow.com/questions/220658/what-is-the-difference-between-a-closure-and-a-lambda#220728)
+
+---
