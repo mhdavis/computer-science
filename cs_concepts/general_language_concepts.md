@@ -115,7 +115,24 @@ Assembly languages have a one-to-one mapping to machine instructions, where as h
 
 ### Interpretation
 
-**Interpretation** is when a source code is passed as is from a Programmer to a client and then interpreted line-by-line, executing immediately upon interpretation completion (on-the-fly interpretation).
+**Interpretation** is the process by which source code is passed to an interpreter, which them compiles and executes a program.
+
+The CPU executes the interpreter (a program), which in turn interprets the source code into machine code and executes it. In an interpreted language:
+
+`interpretation = compilation + execution`
+
+A CPU turns **machine code** into results.
+
+An Interpreter turns **source code** into results.
+
+As a result, the Interpreter is a virtual machine that simulates the CPU.
+
+The Interpreter resolves the issue of **Platform Dependency** by allowing users to acquire an interpreter for their respective system. This means that source code can be ran on any system as long as that system has a system-appropriate interpreter.
+(_See Platform Dependency_)
+
+#### On-The-Fly Interpretation
+
+**On-The-Fly Interpretation** is when source code is passed as is from a Programmer to a client and then interpreted line-by-line, executing immediately upon interpretation completion (on-the-fly interpretation).
 
 ---
 
@@ -127,7 +144,7 @@ Listed below are some of the advantages and disadvantages to using interpreted v
 
 | Pros                  | Cons                            |
 | --------------------- | ------------------------------- |
-| - Fast                | - Not Cross-platform            |
+| - Fast                | - Not Platform Independent      |
 | - Source Code Private | - Requires extra compiling step |
 |                       | - Longer to Develop in          |
 
