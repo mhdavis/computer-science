@@ -1,6 +1,6 @@
 ### Statically Typed vs. Dynamically Typed Languages
 
-Languages that are **dynamically** typed do not have to be provided the data type of primitive data in advanced by the coder. This is because compiler intelligently determines what amount of memory is necessary for a particular data type.
+Languages that are **dynamically** typed do not have to be provided the data type of primitive data in advanced by the coder. This is because the compiler intelligently determines what amount of memory is necessary for a particular data type.
 
 ```javascript
 /*
@@ -214,5 +214,11 @@ A lambda is just an anonymous function.
 A closure is any function which closes over the environment in which it was defined. This means that it can access variables not in its parameter list.
 
 [_Comparison Source_](https://stackoverflow.com/questions/220658/what-is-the-difference-between-a-closure-and-a-lambda#220728)
+
+---
+
+### Platform Dependency
+
+Let us take examine the case where two programs are compiled into executables, one is compiled on a windows system and the other is compiled on a linux system. The executable (.exe) produced after compilation on the windows system will not be runnable on the linux system. Similarly, the executable produced after compilation on the linux system will not be runnable on the windows system. This is because the executables produced are **Platform Dependent**.
 
 ---
