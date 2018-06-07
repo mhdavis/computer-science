@@ -162,7 +162,22 @@ Listed below are some of the advantages and disadvantages to using interpreted v
 
 A **static** element (variable or method) is an element which exists throughout the lifetime of the executed program. This means that unlike in the termination of a instance, where that instance's methods are variables are removed from runtime memory, a _static_ will continue to persist and be usable by other instances.
 
+More succinctly:
+Static variables are class-specifc, meaning that all instances of a class have access to said static variable.
+
 Static methods have the benefit of helping conserve memory usage in larger programs. If a program is not consistently required to create an instance to access a method (only to have that instance later terminated), it means that rather than have 8 different instances with 8 different instanced methods, you have 8 instances with access to the one method. This logic applies to static variables as well.
+
+```java
+/*
+Java Example:
+All instances of the Car class have access to
+the wheelsNum variable
+*/
+
+class Car() {
+  static int wheelsNum = 4
+}
+```
 
 ---
 
